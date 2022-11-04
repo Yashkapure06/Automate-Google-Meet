@@ -1,5 +1,7 @@
 # Automate-Google-Meet
 ### Automating Google meet using selenium in Python
+      
+      This is Mini Project for the subject: Software Testing and Quality Assurance
 
 **ChromeDriver**
 
