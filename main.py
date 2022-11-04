@@ -27,17 +27,14 @@ def join_meet():
     username.click()
     username.send_keys('Your Email Id')
 
-    next = driver.find_element_by_xpath(
-        '//*[@id="identifierNext"]/div/button/span')
+    next = driver.find_element(by=By.XPATH, value='//*[@id="identifierNext"]/div/button/span')
     next.click()
     time.sleep(5)
-    password = driver.find_element_by_xpath(
-        '//*[@id="password"]/div[1]/div/div[1]/input')
+    password = driver.find_element(by=By.XPATH, value='//*[@id="password"]/div[1]/div/div[1]/input')
     password.click()
     password.send_keys('Your Password')
 
-    next = driver.find_element_by_xpath(
-        '//*[@id="passwordNext"]/div/button/span')
+    next = driver.find_element(by=By.XPATH, value='//*[@id="passwordNext"]/div/button/span')
     next.click()
     time.sleep(5)
 
@@ -45,15 +42,12 @@ def join_meet():
 
     time.sleep(5)
 
-    camera = driver.find_element_by_xpath(
-        '//*[@id="yDmH0d"]/c-wiz/div/div/div[12]/div[3]/div/div[1]/div[4]/div/div/div[1]/div[1]/div/div[5]/div[2]/div/div[1]/span'
-        )
+    camera = driver.find_element(by=By.XPATH, value='//*[@id="yDmH0d"]/c-wiz/div/div/div[12]/div[3]/div/div[1]/div[4]/div/div/div[1]/div[1]/div/div[5]/div[2]/div/div[1]/span')
     camera.click()
 
     time.sleep(5)
 
-    mic = driver.find_element_by_xpath(
-        '//*[@id="yDmH0d"]/c-wiz/div/div/div[12]/div[3]/div/div[1]/div[4]/div/div/div[1]/div[1]/div/div[5]/div[1]/div/div/div[1]/span/span/div/div[1]')
+    mic = driver.find_element(by=By.XPATH, value='//*[@id="yDmH0d"]/c-wiz/div/div/div[12]/div[3]/div/div[1]/div[4]/div/div/div[1]/div[1]/div/div[5]/div[1]/div/div/div[1]/span/span/div/div[1]')
     
     
     mic.click()
